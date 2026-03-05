@@ -56,13 +56,3 @@ If you find a better approach or optimization, feel free to open a **pull reques
 Give the repository a ⭐ to support the project!
 
 ---
-
-If you want, I can also give you a **much better version that makes your repo look like a top GitHub DSA repo (like Striver / Neetcode style)** with:
-
-- problem **table tracker**
-- **auto navigation**
-- **topic wise stats**
-- **leetcode badge**
-- **GitHub profile integration**
-
-It will make your repo **look 10× more professional.**
