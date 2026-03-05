@@ -1,8 +1,8 @@
 ## Problem Link [Here](https://leetcode.com/problems/target-sum/)
-## Tags 
+## Tags #Medium 
 ## Related Problems
 
-## Topics [[Tabulation]]
+## Topics [[Tabulation]] [[Knapsack]] [[Memoization]]
 
 ## Solutions
 
