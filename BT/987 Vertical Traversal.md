@@ -1,14 +1,14 @@
 ## Problem Link [Here](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)
 
-### Related Problems
+## Tags #Hard  
+## Related Problems
 
-### Topics
+## Topics [[Trees]]
 
+## Solutions
 
 ## My Approach
 
-
-Passed LeetCode Hard
 
 ```cpp
 class Solution {

@@ -1,15 +1,30 @@
 ## Problem Link [Here](https://leetcode.com/problems/missing-number)
 
-### Related Problems
+## Tags #Easy 
+## Related Problems
 
+## Topics [[Bit Manipulation]]
 
-### Topics
+## Solutions
 
 
 ## My Approach
 
 ```cpp
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        int n=nums.size();
+        int a=0,b=0;
+        for(int i=0;i<=n;i++){
+            a=(a)^(i);
+            if(i<n)
+            b=(b)^(nums[i]);
+        }
+        return (a)^(b);
 
+    }
+};
 ```
 
 
