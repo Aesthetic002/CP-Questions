@@ -4,8 +4,7 @@
 
 ## Topics [[Sorting]] [[Greedy]]
 
-## Solutions
-
+## [Solutions](https://leetcode.com/problems/largest-submatrix-with-rearrangements/editorial/?envType=daily-question&envId=2026-03-17)
 
 ## My Approach
 
