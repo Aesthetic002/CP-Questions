@@ -2,9 +2,9 @@
 
 ## Related Problems
 
-## Tags #Hard 
+## Tags #Hard #good 
 
-## Topics [[Memoization]] [[Tabulation]]
+## Topics [[Memoization]] [[Tabulation]] [[GridDP]]
 
 ## Solutions
 
@@ -709,4 +709,116 @@ public:
     }
 };
 
+```
+
+
+```cpp
+if(val <0){
+
+                    int a=0;
+
+                    if(i>0)a=min(a,dp[i-1][j][1]);
+
+                    if(j>0)a=min(a,dp[i][j-1][1]);
+
+                    if(a!=0)
+
+                        dp[i][j][0]=abs(a*val)%MOD;
+
+                    else{
+
+                        if((i>0 && !dp[i-1][j][0])||(j>0 && !dp[i][j-1][0]))
+
+                        dp[i][j][0]=0;
+
+                    }
+
+  
+
+                    int b=-1;
+
+                    if(i>0)b=max(b,dp[i-1][j][0]);
+
+                    if(j>0)b=max(b,dp[i][j-1][0]);
+
+                    if(b!=-1)
+
+                        dp[i][j][1]=-(abs(b*val)%MOD);
+
+                }
+
+                else if(val >0){
+
+                    int b=-1;
+
+                        if(i>0)b=max(b,dp[i-1][j][0]);
+
+                        if(j>0)b=max(b,dp[i][j-1][0]);
+
+                        if(b!=-1)
+
+                            dp[i][j][0]=abs(b*val)%MOD;
+
+                        else{
+
+                            if((i>0 && !dp[i-1][j][0])||(j>0 && !dp[i][j-1][0]))
+
+                                dp[i][j][0]=0;
+
+                        }
+
+  
+
+                    int a=0;
+
+                        if(i>0)a=min(a,dp[i-1][j][1]);
+
+                        if(j>0)a=min(a,dp[i][j-1][1]);
+
+                        if(a!=0)
+
+                            dp[i][j][1]=-(abs(a*val)%MOD);
+
+                }
+
+                else{
+
+                    dp[i][j][0]=0;
+
+  
+
+                }
+```
+
+
+```cpp
+ //Find the greatest non negative
+
+                int maxi=-1;
+
+                if(i>0)maxi=max(maxi,grid[i-1][j][0]);
+
+                if(j>0)maxi=max(maxi,grid[i][j-1][0]);
+
+  
+
+                //Find the smallest negative
+
+                int mini=0;
+
+                if(i>0)mini=min(mini,grid[i-1][j]);
+
+                if(j>0)mini=min(mini,grid[i][j-1]);
+
+  
+
+                if(val<0){
+
+                    //To fill positive either neighbours should be zero or negative
+
+                    if((i>0 && dp[i-1][j][0]==0)||(j>0 && dp[i][j-1][0]==0))dp[i][j][0]=0;
+
+                    grid[i][j][0]=(mini*val)%MOD;
+
+                }
 ```

@@ -2,7 +2,7 @@
 ## Tags #Medium 
 ## Related Problems
 
-## Topics [[Tabulation]]
+## Topics [[Tabulation]] [[GridDP]]
 
 ## Solutions
 
